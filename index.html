@@ -16,6 +16,14 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="/style.css">
+
+    <!-- owl carousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
     <title>Dariyapar</title>
 </head>
 
@@ -83,20 +91,23 @@
     <!-- searchbar end  -->
 
     <!-- banner start -->
-    <div style="background: #E1F7FF;">
+    <div>
         <div class="banner_container">
-            <div class="row gap-0">
-                <div class="col-md-5 left-section d-flex flex-column justify-content-center">
-                    <h1>FOODSTUFF PROCUREMENT <br> MADE EASY</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed</p>
-                    <div class="buttons">
-                        <button class="shop-now">Shop Now</button>
-                        <button class="contact-us">Contact Us</button>
+            <div class="container position-relative">
+                <div class="row gap-0 justify-content-center align-items-center">
+                    <div class="col-md-5 left-section pt-5 d-flex flex-column justify-content-center">
+                        <h1>FOODSTUFF PROCUREMENT <br> MADE EASY</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed</p>
+                        <div class="buttons">
+                            <button class="shop-now">Shop Now</button>
+                            <button class="contact-us">Contact Us</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7 right-section d-flex justify-content-center align-items-center">
-                    <div class="image-container" style="padding-right: 180px;">
-                        <img src="/assets/home/banner.png" alt="">
+                    <div class="col-md-7  d-flex justify-content-center align-items-center">
+                        <div class="image-container position-absolute right-0" style="top: 0px;z-index: 99999">
+
+                            <img class="img-fluid" style=" height: 656px;" src="/assets/home/banner.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,33 +116,33 @@
     <!-- banner end -->
 
     <!-- category start-------- -->
-    <div class="">
-        <div class="container-fluid featured-categories">
+    <div class="section_gap">
+        <div class="container featured-categories">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>Featured Category</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-2 col-sm-6 category-item">
+            <div class="d-flex  justify-content-center" style="gap: 90px;">
+                <div class="category-item">
                     <div class="category-circle">
                         <img src="/assets/home/cat1.png" alt="Fresh Vegetables and Fruits">
                     </div>
                     <p>Fresh vegetable <br> and fruits</p>
                 </div>
-                <div class="col-md-2 col-sm-6 category-item">
+                <div class="category-item">
                     <div class="category-circle">
                         <img src="/assets/home/cat2.png" alt="Grains">
                     </div>
                     <p>Grains</p>
                 </div>
-                <div class="col-md-2 col-sm-6 category-item">
+                <div class="category-item">
                     <div class="category-circle">
                         <img src="/assets/home/cat3.png" alt="Spices">
                     </div>
                     <p>Spices</p>
                 </div>
-                <div class="col-md-2 col-sm-6 category-item">
+                <div class="category-item">
                     <div class="category-circle">
                         <img src="/assets/home/cat4.png" alt="Snacks">
                     </div>
@@ -140,15 +151,157 @@
             </div>
         </div>
     </div>
-
-
     <!-- category end-------- -->
+
+
+
+    <!-- why choose us start -->
+    <div class="container-fluid why-choose-us section_gap">
+        <div class="row px-0">
+            <div class="col-md-6 left-section px-0">
+                <div class="image-wrapper">
+                    <img src="/assets/home/whychooseus.png" alt="Ships and Port">
+                    <div class="play-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 right-section">
+                <h2>Why Choose Us</h2>
+                <p>Our global export expertise, advanced supply chain technology & <br> customized delivery solutions
+                    will help you get the best product on <br> timely manner.</p>
+                <div class="info-blocks">
+                    <div class="d-flex">
+                        <div class="info-block">
+                            <img src="/assets/home/icons1.png" alt="">
+                            <p>24/7 Hours <br> Support</p>
+                        </div>
+                        <div class="info-block">
+                            <img src="/assets/home/icon2.png" alt="">
+                            <p>Fast & Efficient <br> Delivery</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="info-block">
+                            <img src="/assets/home/icon3.png" alt="">
+                            <p>Track <br> Shipment</p>
+                        </div>
+                        <div class="info-block">
+                            <img src="/assets/home/icon4.png" alt="">
+                            <p>Easy Payment <br> Method</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="discover-shop">Discover Shop</button>
+            </div>
+        </div>
+    </div>
+    <!-- why choose us end -->
+
+    <!-- Featured Products  start-->
+    <div class=" featured-products">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Featured Products</h2>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="product-card">
+                    <img src="/assets/home/feature1.png" alt="Fresh Vegetables">
+                    <h3>Fresh Vegetables</h3>
+                    <p>$500.00</p>
+                    <div class="product-icon">HD</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card">
+                    <img src="/assets/home/feature2.png" alt="Organic Grains">
+                    <h3>Organic Grains</h3>
+                    <p>$500.00 <span class="old-price">$550.00</span></p>
+                    <div class="product-icon">HD</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card">
+                    <img src="/assets/home/feature3.png" alt="Organic Spices">
+                    <h3>Organic Spices</h3>
+                    <p>$500.00</p>
+                    <div class="product-icon">HD</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-card">
+                    <img src="/assets/home/feature4.png" alt="Great Snacks">
+                    <h3>Great Snacks</h3>
+                    <p>$500.00</p>
+                    <div class="product-icon">HD</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured Products end -->
+
+    <!-- testimonial start -->
+
+
+    
+    <!-- testimonial end -->
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <!-- owl script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false, // Remove default navigation
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+
+            // Custom navigation event listeners
+            $('.custom-next').click(function () {
+                owl.trigger('next.owl.carousel');
+            });
+
+            $('.custom-prev').click(function () {
+                owl.trigger('prev.owl.carousel', [300]); // 300ms transition speed
+            });
+        });
+    </script>
 </body>
 
 
