@@ -2,24 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <!-- owl carousel cdn -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>Dariyapar</title>
 
 </head>
 
 <body>
     <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light lg:px-0 px-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.png" alt="Logo">
+                </a>
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Icons and Buttons -->
+                    <form class="d-flex align-items-center" style="gap: 20px;">
+                        <div class="d-flex align-items-center gap-3">
+                            <img style="margin-top: 0;" src="/assets/icon/love.svg" alt="">
+                            <img style="margin-bottom:13px;" src="/assets/icon/Vector.png" alt="">
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="login_button" type="submit">Log in</button>
+                            <button class="signup_button" type="submit">Sign Up</button>
+                        </div>
 
-
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- header end -->
+
+    <!-- searchbar start  -->
+    <section>
+        <div class="search-container">
+            <div class="container d-flex align-items-center" style="gap: 12px;">
+                <button>
+                    <img style="width: 24px; height: 18px;" src="/assets/icon/bar.svg" alt="">
+                    Categories
+                </button>
+                <div class="search-bar ">
+                    <input type="text" placeholder="Search Product">
+                    <button class="search-icon">
+                        <img src="/assets/icon/search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- searchbar end  -->
+
+    <!-- about banner start -->
+    <section class="about_banner">
+        <div class="about_section">
+            <h2>About Us</h2>
+            <p>Home / <span style="color: #222;">About Us</span></p>
+        </div>
+    </section>
+
+    <!-- about banner end-->
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="/assets/logo.png" alt="Dariyapar Logo">
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Our Company</h3>
+                <ul>
+                    <li><a href="#">- Contact Us</a></li>
+                    <li><a href="#">- Delivery</a></li>
+                    <li><a href="#">- Terms & Conditions</a></li>
+                    <li><a href="#">- About Us</a></li>
+                    <li><a href="#">- Legal Notice</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="text-center">Contact Us</h3>
+                <p>My Company, 42 Puma Street 345185</p>
+                <p class="mb-4">Puffinville France</p>
+                <p class="mb-4"><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                <p class="mb-4">(+91) 659-594-854</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Help Links</h3>
+                <ul>
+                    <li><a href="#">- Wishlist</a></li>
+                    <li><a href="#">- Cart</a></li>
+                    <li><a href="#">- Delivery</a></li>
+                    <li><a href="#">- FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>©2025 Dariyapar Private Limited. All rights reserved.</p>
+            <div class="d-flex align-items-center" style="gap: 73px">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+    <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <img src="/assets/home/backtotop.png" alt="">
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- owl script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- slick  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- slick  -->
+
 
 </body>
 

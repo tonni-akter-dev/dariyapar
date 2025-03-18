@@ -1,0 +1,112 @@
+.about_banner {
+    background-image: url('/assets/home/banner-bg.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 413px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_section h2 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 2.75px;
+}
+
+.about_section p {
+    color: #747272;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+}
+
+.about_text_design p {
+    color: var(--Heading, #222);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 1.04px;
+    padding-top: 97px;
+    padding-bottom: 20px;
+}
+
+.about_text_design h5 {
+    color: var(--Paragraph, #414141);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172.743%;
+    /* 31.094px */
+    letter-spacing: 0.72px;
+    margin-bottom: 77px;
+}
+
+.about_text_design img {
+    margin-bottom: 150px;
+    max-width: 100%;
+}
+
+.project_overview {}
+
+.project_overview h1 {
+    color: var(--Heading, #222);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 75.4px */
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.project_overview p {
+    color: var(--Paragraph, #414141);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+    letter-spacing: 0.72px;
+    margin-bottom: 85px;
+}
+
+.project_card h3 {
+    color: var(--Heading, #222);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.32px;
+    margin-top: 23px;
+}
+
+.project_card p {
+    color: var(--Paragraph, #414141);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
