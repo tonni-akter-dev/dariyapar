@@ -483,6 +483,27 @@ input {
     margin-bottom: 23px;
 }
 
+.slick-slider_blog.row {
+    margin-left: -10px;
+    /* Adjust if needed to compensate for column padding */
+    margin-right: -10px;
+    /* Adjust if needed to compensate for column padding */
+}
+
+.slick-slider_blog .slide {
+    padding-left: 10px;
+    /* Adjust to half of the desired gap */
+    padding-right: 10px;
+    /* Adjust to half of the desired gap */
+    margin-bottom: 20px;
+    /* Add margin between rows */
+}
+
+.product-card {
+    margin-bottom: 20px;
+    /* Add margin between product cards */
+}
+
 .product-card h3 {
     color: #000;
     text-align: center;
@@ -513,78 +534,78 @@ input {
     display: inline-block;
 }
 
-.owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-}
-
-.owl-prev,
-.owl-next {
-    position: absolute;
-    background-color: black !important;
-    padding: 10px 15px !important;
-    border-radius: 50% !important;
-}
-
-.owl-prev {
-    left: 10px;
-
-}
-
-.owl-item {
-    margin-right: 10px !important;
-}
-
-.owl-next {
-    right: 10px;
-    left: 20%;
-}
-
-.owl-prev,
-.owl-next {
-    background-color: white !important;
-}
-
-.owl-carousel-wrapper {
-    position: relative;
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
-    color: black !important;
-}
-
-
-.owl-carousel .owl-nav.disabled {
-    /* display: flex !important; */
-}
-
-.owl-carousel .owl-nav button.owl-prev {
-    width: 60px;
-    height: 60px;
-}
-
-.owl-carousel .owl-nav button.owl-next {
-    width: 60px;
-    height: 60px;
-}
-
-/* Optional: Hide default Owl Carousel dots */
-.owl-dots {
-    display: block;
-}
-
-.owl-theme .owl-nav [class*=owl-] {
-    color: white;
-}
-
 /* feature products end */
 
+.ourlatest_blog .slick-prev:before,
+.ourlatest_blog .slick-next:before {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background-color: #FFFFFF !important;
+    border: #DFDFDF 1px solid !important;
+    color: #DFDFDF !important;
+}
 
 
+
+.ourlatest_blog .slick-next:before {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background-color: #FFFFFF !important;
+    border: #DFDFDF 1px solid !important;
+    color: #DFDFDF !important;
+}
+.ourlatest_blog .slick-next {
+    right: -60px !important;
+}
+
+
+.ourlatest_blog .slick-prev {
+    left: -100px !important;
+}
+
+.ourlatest_blog .slick-next:before {
+    content: ">" !important;
+}
+
+.ourlatest_blog .slick-prev:before {
+    content: "<" !important;
+
+}
+
+.ourlatest_blog .slick-prev:before,
+.ourlatest_blog .slick-next:before {
+    color: #DFDFDF !important;
+    background-color: #FFFFFF !important;
+    border: #DFDFDF 1px solid !important;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    width: 126px;
+    height: 57px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 11px;
+    border: 1px solid#131C1E;
+    background: #FFF;
+    opacity: 1 !important;
+    margin-bottom: 150px;
+}
+
+.ourlatest_blog .slick-prev:hover:before,
+.ourlatest_blog .slick-next:hover:before {
+    background: linear-gradient(to right, #f1f1f1 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.4s ease-out;
+}
+
+.ourlatest_blog .slick-prev,
+.ourlatest_blog .slick-next {
+    top: 40% !important;
+}
 
 /* footer start */
 
