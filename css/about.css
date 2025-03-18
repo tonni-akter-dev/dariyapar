@@ -110,3 +110,81 @@
     line-height: normal;
     letter-spacing: 0.9px;
 }
+
+.our_vision {
+    margin-bottom: 211px;
+}
+
+.our_vision p {
+    color: var(--Secoundary-text-color, #676666);
+    /* Paragraph */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    margin-bottom: 16px;
+}
+
+.our_vision h2 {
+    color: var(--Primart-text-color, #202340);
+    font-family: Nunito;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.16px;
+}
+
+.why_choose_rightside {}
+
+.why_choose_rightside h2 {
+    color: var(--Primart-text-color, #202340);
+    font-family: Nunito;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.16px;
+    margin-bottom: 10px;
+}
+
+.why_choose_rightside .text {
+    color: var(--Secoundary-text-color, #676666);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    margin-bottom: 52px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 72px;
+    row-gap: 54px;
+}
+
+.feature img {
+    margin-bottom: 27px;
+}
+
+.feature h3 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 33.6px */
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.icon {
+    /* Style your icons here */
+    margin-top: 20px;
+}
