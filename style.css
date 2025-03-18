@@ -1,0 +1,179 @@
+/* rooot */
+
+:root {
+
+    --primary: #009BDB;
+    --secondary: #71CFF3;
+    --Primary-color-1: #2055A1;
+    --Heading: #222;
+    --color-414141: #414141;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+/* rooot */
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input {
+    background: transparent;
+    border: none;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0;
+    /* margin: auto; */
+}
+
+
+/* header start --------------------------*/
+.nav-item {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Heading);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--Primary-color-1);
+}
+
+.navbar-expand-lg .navbar-nav {
+    gap: 46px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+.signup_button {
+    padding: 13px 23px;
+    color: var(--secondary1);
+    border-radius: 134px;
+    background: var(--Primary-color-1, #2055A1);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 13px 23px;
+}
+
+.login_button {
+    padding: 13px 23px;
+    color: var(--Primary-color-1, #2055A1);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 134px;
+    border: 1px solid var(--Primary-color-1, #2055A1);
+}
+
+/* header end----------------------------- */
+
+
+
+/* searchbar start------------------------ */
+.search-container {
+    background-color: var(--secondary);
+    padding: 38px 0px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-container button {
+    border: none;
+    padding: 18px 31px;
+    border-radius: 5px;
+    margin-right: 5px;
+
+    border-radius: 178px;
+    background: #FFF;
+    box-shadow: 0px 0px 24px 0px rgba(32, 85, 161, 0.30);
+    color: var(--Heading);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.search-bar input {
+    border: none;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.search-bar .search-icon {
+    background-color: #007bff;
+    /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* searchbar end */
+
+/* footer start */
+
+
+/* header end */
