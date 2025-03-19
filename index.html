@@ -16,6 +16,7 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <!-- owl carousel cdn -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
@@ -54,7 +55,7 @@
                         </li>
                     </ul>
                     <!-- Icons and Buttons -->
-                    <form class="d-flex align-items-center" style="gap: 20px;">
+                    <form class="d-flex flex-lg-row flex-column mt-lg-0 mt-5 align-items-center" style="gap: 20px;">
                         <div class="d-flex align-items-center gap-3">
                             <img style="margin-top: 0;" src="/assets/icon/love.svg" alt="">
                             <img style="margin-bottom:13px;" src="/assets/icon/Vector.png" alt="">
@@ -91,35 +92,29 @@
     <!-- searchbar end  -->
 
     <!-- banner start -->
-
     <section>
-        <div>
-            <div class="banner_container">
-                <div class="container position-relative">
-                    <div class="row gap-0 justify-content-center align-items-center">
-                        <div class="col-md-5 left-section pt-5 d-flex flex-column justify-content-center">
-                            <h1>FOODSTUFF PROCUREMENT <br> MADE EASY</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed</p>
-                            <div class="buttons">
-                                <button class="shop-now">Shop Now</button>
-                                <button class="contact-us">Contact Us</button>
-                            </div>
-                        </div>
-                        <div class="col-md-7  d-flex justify-content-center align-items-center">
-                            <div class="image-container position-absolute right-0" style="top: 0px;z-index: 99999">
-
-                                <img class="img-fluid" style=" height: 656px;" src="/assets/home/banner.png" alt="">
-                            </div>
+        <div class="banner_container position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 left-section d-flex flex-column justify-content-center banner_left_col">
+                        <h1>FOODSTUFF<br> PROCUREMENT <br> MADE EASY</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed</p>
+                        <div class="buttons">
+                            <button class="shop-now">Shop Now</button>
+                            <button class="contact-us">Contact Us</button>
                         </div>
                     </div>
+                    <!-- <div class="col-md-7 d-lg-block d-none">
+                        <img style="width: 100%; height: 800px; object-fit: contain;" src="/assets/home/banner.png" alt="banner1">
+                    </div> -->
                 </div>
+                <img class="position-absolute banner_img" style=" height: 700px;" src="/assets/home/banner.png" alt="">
             </div>
         </div>
     </section>
-
     <!-- banner end -->
 
-    <!-- category start-------- -->
+    <!-- category start -->
     <section>
         <div class="section_gap">
             <div class="container featured-categories">
@@ -128,30 +123,38 @@
                         <h2>Featured Category</h2>
                     </div>
                 </div>
-                <div class="d-flex  justify-content-center" style="gap: 90px;">
-                    <div class="category-item">
-                        <div class="category-circle">
-                            <img src="/assets/home/cat1.png" alt="Fresh Vegetables and Fruits">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="category-item">
+                            <div class="category-circle">
+                                <img src="/assets/home/cat1.png" alt="Fresh Vegetables and Fruits">
+                            </div>
+                            <p>Fresh vegetable <br> and fruits</p>
                         </div>
-                        <p>Fresh vegetable <br> and fruits</p>
                     </div>
-                    <div class="category-item">
-                        <div class="category-circle">
-                            <img src="/assets/home/cat2.png" alt="Grains">
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="category-item">
+                            <div class="category-circle">
+                                <img src="/assets/home/cat2.png" alt="Grains">
+                            </div>
+                            <p>Grains</p>
                         </div>
-                        <p>Grains</p>
                     </div>
-                    <div class="category-item">
-                        <div class="category-circle">
-                            <img src="/assets/home/cat3.png" alt="Spices">
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="category-item">
+                            <div class="category-circle">
+                                <img src="/assets/home/cat3.png" alt="Spices">
+                            </div>
+                            <p>Spices</p>
                         </div>
-                        <p>Spices</p>
                     </div>
-                    <div class="category-item">
-                        <div class="category-circle">
-                            <img src="/assets/home/cat4.png" alt="Snacks">
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="category-item">
+                            <div class="category-circle">
+                                <img src="/assets/home/cat4.png" alt="Snacks">
+                            </div>
+                            <p>Snacks</p>
                         </div>
-                        <p>Snacks</p>
                     </div>
                 </div>
             </div>
@@ -165,21 +168,18 @@
             <div class="row px-0">
                 <div class="col-md-6 left-section px-0">
                     <div class="image-wrapper">
-                        <img src="/assets/home/whychooseus.png" alt="Ships and Port">
+                        <img class="bg_whychoose" src="/assets/home/whychooseus.png" alt="Ships and Port">
                         <div class="play-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                            </svg>
+                            <img src="/assets/home/play.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 right-section">
                     <h2>Why Choose Us</h2>
-                    <p>Our global export expertise, advanced supply chain technology & <br> customized delivery
+                    <p>Our global export expertise, advanced supply chain technology & <br class="d-lg-block d-none">
+                        customized delivery
                         solutions
-                        will help you get the best product on <br> timely manner.</p>
+                        will help you get the best product on <br class="d-lg-block d-none"> timely manner.</p>
                     <div class="info-blocks">
                         <div class="d-flex">
                             <div class="info-block">
@@ -209,166 +209,12 @@
     </section>
     <!-- why choose us end -->
 
-    <!-- feature section Start -->
-    <section class="ourlatest_blog featured-products">
-        <div class="container">
-            <div class=" blog_wrapper mb_130">
-                <div class="text-center">
-                    <h2>Featured Products</h2>
 
-                </div>
-                <div class="slick-slider_blog row">
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature1.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/Vector.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature2.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/Vector.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature3.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/cart.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature4.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/cart.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature1.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/cart.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature2.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/cart.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature1.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/cart.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide col-lg-3">
-                        <div class="product-card">
-                            <img src="/assets/home/feature2.png" alt="Fresh Vegetables">
-                            <h3>Fresh Vegetables</h3>
-                            <p>$500.00</p>
-                            <div class="">
-                                <img src="/assets/icon/cart.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- feature section end -->
-
-    <!-- testimonial start -->
-    <section>
-        <div class="container-fluid section_gap px-0">
-            <div class="slick-slider_testimonial ">
-                <div class="slide">
-                    <div class="testimonial">
-                        <div class="d-flex justify-content-center">
-                            <img src="/assets/home/profile.png" alt="">
-
-                        </div>
-                        <p>“Lorem ipsum dolor sit amet consectetur. Maecenas enim sodales in <br> vel habitasse.
-                            Eu feugiat eget porttitor quis porttitor nunc egestas <br> pharetra nunc.
-                            Pellentesque lectus elem.”</p>
-                        <h3>Josephine Deep</h3>
-                        <span>-CEO & Founder</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="testimonial">
-                        <div class="d-flex justify-content-center">
-                            <img src="/assets/home/profile.png" alt="">
-
-                        </div>
-                        <p>“Lorem ipsum dolor sit amet consectetur. Maecenas enim sodales in <br> vel habitasse.
-                            Eu feugiat eget porttitor quis porttitor nunc egestas <br> pharetra nunc.
-                            Pellentesque lectus elem.”</p>
-                        <h3>Josephine Deep</h3>
-                        <span>-CEO & Founder</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="testimonial">
-                        <div class="d-flex justify-content-center">
-                            <img src="/assets/home/profile.png" alt="">
-                        </div>
-                        <p>“Lorem ipsum dolor sit amet consectetur. Maecenas enim sodales in <br> vel habitasse.
-                            Eu feugiat eget porttitor quis porttitor nunc egestas <br> pharetra nunc.
-                            Pellentesque lectus elem.”</p>
-                        <h3>Josephine Deep</h3>
-                        <span>-CEO & Founder</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="testimonial">
-                        <div class="d-flex justify-content-center">
-                            <img src="/assets/home/profile.png" alt="">
-
-                        </div>
-                        <p>“Lorem ipsum dolor sit amet consectetur. Maecenas enim sodales in <br> vel habitasse.
-                            Eu feugiat eget porttitor quis porttitor nunc egestas <br> pharetra nunc.
-                            Pellentesque lectus elem.”</p>
-                        <h3>Josephine Deep</h3>
-                        <span>-CEO & Founder</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial end -->
 
     <!-- latest news start -->
     <section>
         <div class="container news-container">
             <h2 class="text-center">Latest News</h2>
-
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="news-card">
@@ -413,7 +259,7 @@
     <!-- our clients start -->
     <section class="section_gap">
         <h2 class="heading_text" style="margin-bottom: 35px;">Our Clients</h2>
-        <div class="d-flex justify-content-center align-items-center" style="gap: 124px;">
+        <div class="client_images d-flex justify-content-center align-items-center">
             <img src="/assets/home/client1.png" alt="">
             <img src="/assets/home/client2.png" alt="">
             <img src="/assets/home/client3.png" alt="">
@@ -432,7 +278,7 @@
                     <img src="/assets/home/send.png" alt="">
                     <span>Sign Up For Newletter</span>
                 </div>
-                <div class="position-relative">
+                <div class="position-relative w-sm-100">
                     <input type="email" placeholder="example@gmail.com" class="email-input">
                     <button class="subscribe-button">Subscribe</button>
                 </div>
@@ -482,7 +328,7 @@
         </div>
     </footer>
 
-    <div class="footer-bottom">
+    <!-- <div class="footer-bottom">
         <div class="footer-bottom-content">
             <p>©2025 Dariyapar Private Limited. All rights reserved.</p>
             <div class="d-flex align-items-center" style="gap: 73px">
@@ -490,7 +336,7 @@
                 <a href="#">Terms of Service</a>
             </div>
         </div>
-    </div>
+    </div> -->
     <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
         <img src="/assets/home/backtotop.png" alt="">
     </button>
@@ -544,9 +390,9 @@
             $(".slick-slider_blog").slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                autoplay: true,
                 autoplaySpeed: 2000,
                 dots: true,
+                autoplay: true,
                 gap: 20,
                 prevArrow: '<button class="slick-prev" aria-label="Previous"> </button>',
                 nextArrow: '<button class="slick-next" aria-label="Next"></button>',

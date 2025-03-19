@@ -48,6 +48,20 @@ a {
     outline: none;
 }
 
+.row {
+    margin: 0 !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    padding: 0 !important;
+}
+
 .heading_text {
     color: #000;
     text-align: center;
@@ -64,7 +78,7 @@ a {
 
 body {
     font-family: "Nunito Sans", sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 button {
@@ -209,22 +223,26 @@ input {
     flex-shrink: 0;
 }
 
+@media (max-width: 576px) {
+    .search-container .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+}
+
 /* searchbar end------------------ */
 
 /* banner start */
-
 .banner_container {
-    /* padding-left: 313px; */
     height: 742px;
     background-image: url('/assets/home/banner-bg.png');
     background-repeat: no-repeat;
-    /* background-size: contain;
-    background-size: 100%; */
-    /* padding: 134px 0; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-size: cover;
+
 }
 
 .left-section h1 {
@@ -267,12 +285,49 @@ input {
     background: #009BDB;
     color: white;
 }
-
+.banner_left_col{
+    padding: 134px 0;
+}
 .buttons .contact-us {
-    background-color: #f0f0f0;
+    border-radius: 134px;
     border: 1px solid var(--Primary-color-1, #2055A1);
+    padding: 15px 27px;
     color: var(--Primary-color-1, #2055A1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 
+}
+
+.banner_container .banner_img{
+    right: -50px;
+    top: 50px;
+}
+@media (max-width: 768px) {
+
+    /* Add more breakpoints */
+    .left-section h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .left-section p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .section_gap {
+        margin: 3rem 0;
+    }
 }
 
 /* banner end----------------------- */
@@ -281,8 +336,14 @@ input {
 /* feature category section start */
 .featured-categories .row {
     padding: 0 16px;
-    gap: 90px;
+    /* gap: 90px; */
 }
+
+.product-card {
+    /* height: 295px; */
+    width: 100%;
+}
+
 
 .featured-categories h2 {
     margin-bottom: 80px;
@@ -309,7 +370,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
     overflow: hidden;
 }
 
@@ -339,28 +400,21 @@ input {
 
 /* why choose us start */
 
-
-
-.why-choose-us {
-    /* padding: 50px 0; */
-}
-
 .left-section {
     position: relative;
 }
 
-.image-wrapper img {
+.image-wrapper .bg_whychoose {
     width: 100%;
     display: block;
     height: 724px;
 }
 
-.play-button {
+.play-button img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -370,10 +424,6 @@ input {
     cursor: pointer;
 }
 
-.play-button svg {
-    fill: #007bff;
-    /* Bootstrap primary blue */
-}
 
 .right-section {
     padding: 128px 0 0 128px;
@@ -407,8 +457,6 @@ input {
 }
 
 .info-blocks {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     gap: 50px;
     display: flex;
     flex-direction: column;
@@ -459,6 +507,8 @@ input {
     margin-top: 65px;
 }
 
+
+
 /* why choose us end */
 
 /* feature products start */
@@ -486,13 +536,22 @@ input {
     padding: 9px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    width: 100%;
 }
 
-.product-card img {
-    max-width: 100%;
+.product_image img {
+    width: 100%;
     border-radius: 10px;
     height: auto;
     margin-bottom: 23px;
+}
+
+.slick-dots li button:before {
+    color: #E1F7FF;
+}
+
+.slick-dots {
+    bottom: -50px !important;
 }
 
 .slick-slider_blog.row {
@@ -529,10 +588,6 @@ input {
     margin-bottom: 10px;
 }
 
-.product-card p {
-    margin-bottom: 10px;
-}
-
 .product-card .old-price {
     text-decoration: line-through;
     color: #888;
@@ -545,6 +600,7 @@ input {
     border-radius: 5px;
     display: inline-block;
 }
+
 
 /* feature products end */
 
@@ -631,7 +687,6 @@ input {
     padding-bottom: 90px;
 }
 
-.testimonial_ img {}
 
 .testimonial p {
     color: var(--Heading, #222);
@@ -744,8 +799,10 @@ input {
 
 /* news end */
 
-
-
+/* client */
+.client_images {
+    gap: 124px;
+}
 
 /* newsletter start  */
 .newsletter-section {
@@ -916,11 +973,12 @@ input {
 
 .footer-bottom a {
     color: #FFF;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 14px */
+    line-height: 100%;
+    /* 14px */
 }
 
 .footer-bottom a:hover {
