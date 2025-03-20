@@ -1,0 +1,284 @@
+.contact_form {
+    margin-top: 126px;
+}
+
+.contact_form h2 {
+    color: #232536;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.16px;
+    margin-bottom: 47px;
+}
+
+
+.contact-form {
+    padding: 45px 67px;
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(29, 54, 132, 0.10);
+    max-width: 864px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: -173px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-control {
+    border-radius: 40px;
+    border: 1px solid #D1D9E7;
+    background: #FFF;
+    height: 56px;
+    color: #798388;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 25px;
+    letter-spacing: 0.64px;
+
+}
+
+textarea.form-control {
+    border-radius: 15px;
+    height: 167px;
+    margin-bottom: 48px;
+    resize: none;
+}
+
+.btn-custom {
+    width: 295px;
+    height: 56px;
+    flex-shrink: 0;
+    width: 295px;
+    height: 56px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 28px */
+    border-radius: 40px;
+    background: var(--Secondary, #009BDB);
+    text-transform: capitalize;
+}
+
+.visit_container {
+    padding: 0 88px;
+    margin-bottom: 180px;
+}
+
+.visit_container h2 {
+    color: #000;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.16px;
+    margin-top: 183px;
+    margin-bottom: 53px;
+}
+
+.visit_card {
+    border-radius: 10px;
+    border: 1px solid #FAFAFA;
+    background: #FFF;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.visit_card img {
+    margin-bottom: 45px;
+}
+
+.visit_card h4 {
+    color: var(--Heading, #222);
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.visit_card p {
+    color: #798388;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    margin-bottom: 13px;
+}
+
+.visit_card span {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 21px;
+}
+
+.visit_card a {
+    color: #798388;
+    font-family: "SF Pro Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 18px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.visit_container .row {
+    gap: 42px;
+}
+
+
+.contact-section {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 48px 45px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 180px;
+}
+
+.contact-text {
+    flex-grow: 1;
+}
+
+.contact-text h2 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 42px */
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    color: #798388;
+
+    /* Paragraph */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.64px;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-buttons button,
+.contact-buttons a {
+    width: 203px;
+    height: 56px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-buttons button {
+    background-color: transparent;
+    color: #007bff;
+    /* Blue text */
+}
+
+.contact-buttons a {
+    border-radius: 158px;
+    background: var(--Secondary, #009BDB);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 20px */
+    text-transform: capitalize;
+}
+
+.contact-buttons a svg {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-buttons {
+        margin-top: 10px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-buttons button,
+    .contact-buttons a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .visit_container {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .visit_container h2{
+        font-size: 32px;
+    }
+    .contact-form{
+        padding: 40px 20px;
+        border-radius: 20px;
+    }
+    .contact_form h2{
+        font-size: 32px;
+    }
+}
