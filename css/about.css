@@ -60,8 +60,12 @@
     max-width: 100%;
 }
 
-.project_overview {}
-
+.project_overview {
+    padding: 0 73px;
+}
+.why-choose-dairy{
+    margin-bottom: 225px;
+}
 .project_overview h1 {
     color: var(--Heading, #222);
     text-align: center;
@@ -136,7 +140,9 @@
     line-height: 130%;
     letter-spacing: 1.16px;
 }
-
+.why_choose_rightside{
+    width: 47%;
+}
 .why_choose_rightside h2 {
     color: var(--Primart-text-color, #202340);
     font-family: Nunito;

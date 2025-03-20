@@ -178,4 +178,76 @@
         gap: 50px;
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* about us================ */
+
+    .project_overview {
+        padding: 0 20px;
+    }
+
+    .project_overview h1 {
+        font-size: 32px;
+    }
+
+    .about_text_design img {
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .about_text_design p {
+        font-size: 18px;
+    }
+
+    .about_banner {
+        height: 250px;
+    }
+
+    .about_section h2 {
+        font-size: 36px;
+    }
+
+    .our_vision {
+        margin-bottom: 40px;
+    }
+
+    .why-choose-dairy {
+        margin-bottom: 40px;
+    }
+
+    .why_choose_rightside h2 {
+        font-size: 36px;
+    }
+
+    .our_vision h2 {
+        font-size: 32px;
+    }
+
+    .why_choose_rightside {
+        width: 100%;
+    }
+
+    .features-grid {
+        row-gap: 32px;
+    }
+    .feature img {
+        margin-bottom: 15px;
+    }
+    /* about us================ */
 }

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,13 +17,13 @@
     <!-- css -->
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <!-- owl carousel cdn -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>Dariyapar</title>
-
 </head>
 
 <body>
@@ -41,20 +43,20 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Shops</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="/about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
                     <!-- Icons and Buttons -->
-                    <form class="d-flex align-items-center" style="gap: 20px;">
+                    <form class="d-flex flex-lg-row flex-column mt-lg-0 mt-5 align-items-center" style="gap: 20px;">
                         <div class="d-flex align-items-center gap-3">
                             <img style="margin-top: 0;" src="/assets/icon/love.svg" alt="">
                             <img style="margin-bottom:13px;" src="/assets/icon/Vector.png" alt="">
@@ -75,12 +77,20 @@
     <section>
         <div class="search-container">
             <div class="container d-flex align-items-center" style="gap: 12px;">
-                <button>
-                    <img style="width: 24px; height: 18px;" src="/assets/icon/bar.svg" alt="">
-                    Categories
-                </button>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img style="width: 24px; height: 18px;" src="/assets/icon/bar.svg" alt="">
+                        Categories
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#">Shirt</a></li>
+                        <li><a class="dropdown-item" href="#">Saree</a></li>
+                        <li><a class="dropdown-item" href="#">Shirt</a></li>
+                        <li><a class="dropdown-item" href="#">Saree</a></li>
+                    </ul>
+                </div>
                 <div class="search-bar ">
-                    <input type="text" placeholder="Search Product">
+                    <input type="text" class="w-100" placeholder="Search Product">
                     <button class="search-icon">
                         <img src="/assets/icon/search.svg" alt="">
                     </button>
@@ -101,15 +111,21 @@
 
     <!-- about us start -->
     <section class="container about_text_design">
-        <p class="">Welcome to <span cla><a style="color: #009BDB;" href="#">Dariyapar.com</a> </span>your one-stop
-            solution for seamless and efficient
-            management in <br> the
-            export business. We're a forward-thinking startup dedicated to transforming the way <br> businesses source,
-            communicate, and manage orders within the export industry. </p>
-        <h5>Our platform provides an innovative, user-friendly, and secure web portal designed to simplify the
-            complexities of international trade. By <br> offering enhanced communication tools, streamlined order
-            management,
-            and easy product sourcing, we make the export process <br> smoother for both buyers and sellers. </h5>
+        <div class="px-lg-0 px-3">
+            <p class="">Welcome to <span cla><a style="color: #009BDB;" href="#">Dariyapar.com</a> </span>your one-stop
+                solution for seamless and efficient
+                management in <br class="d-lg-block d-none"> the
+                export business. We're a forward-thinking startup dedicated to transforming the way <br> businesses
+                source,
+                communicate, and manage orders within the export industry. </p>
+            <h5>Our platform provides an innovative, user-friendly, and secure web portal designed to simplify the
+                complexities of international trade. By <br class="d-lg-block d-none"> offering enhanced communication
+                tools, streamlined order
+                management,
+                and easy product sourcing, we make the export process <br class="d-lg-block d-none"> smoother for both
+                buyers and sellers. </h5>
+
+        </div>
         <div class="d-flex justify-content-center">
             <img src="/assets/about/about.png" alt="">
         </div>
@@ -118,11 +134,14 @@
     <!-- about us start -->
 
     <!-- Project Overview start -->
-    <section class="container project_overview" style="padding: 0 73px;">
+    <section class="container project_overview">
         <h1>Project Overview</h1>
-        <p>At Dariyapar, we recognize the challenges faced by the export business, particularly in sourcing,
-            communication, and order <br>fulfillment. That's why we've developed an intuitive web app that bridges the
-            gap between buyers and sellers, ensuring that all parties <br>can focus on what truly matters -quality and
+        <p class="">At Dariyapar, we recognize the challenges faced by the export business, particularly in
+            sourcing,
+            communication, and order <br class="d-lg-block d-none">fulfillment. That's why we've developed an intuitive
+            web app that bridges the
+            gap between buyers and sellers, ensuring that all parties <br class="d-lg-block d-none">can focus on what
+            truly matters -quality and
             efficiency. </p>
         <div class="row project_card">
             <div class="col-lg-4">
@@ -130,7 +149,8 @@
                     <img src="/assets/about/project1.png" alt="">
                 </div>
                 <h3 class="mb-2">Product Sourcing</h3>
-                <p>Easily connect with trusted suppliers and discover a wide range of products, from raw materials to
+                <p class="">Easily connect with trusted suppliers and discover a wide range of products, from raw
+                    materials to
                     finished goods. </p>
             </div>
             <div class="col-lg-4">
@@ -138,7 +158,8 @@
                     <img src="/assets/about/project2.png" alt="">
                 </div>
                 <h3 class="mb-2">Streamlined Communication</h3>
-                <p>Stay in the loop with seamless messaging and real-time updates, reducing the friction often
+                <p>Stay in the loop with seamless messaging and real-time updates,
+                    reducing the friction often
                     associated with international trade </p>
             </div>
             <div class="col-lg-4">
@@ -146,15 +167,17 @@
                     <img src="/assets/about/project3.png" alt="">
                 </div>
                 <h3 class="mb-2">Order Management</h3>
-                <p>Track orders, manage payments, and monitor delivery timelines - all in one place </p>
+                <p>Track orders, manage payments, and monitor delivery timelines - all in
+                    one place </p>
             </div>
         </div>
     </section>
     <!-- Project Overview end -->
 
     <!-- our vision -->
-    <section class="our_vision container">
-        <div class="row align-items-center">
+    <section class="our_vision container px-lg-0 px-3">
+        <div
+            class="row flex-lg-row flex-column-reverse mt-lg-0 mt-5 justify-content-center align-items-center gap-lg-0 gap-4">
             <div class="col-lg-4">
                 <h2>Our Vision</h2>
                 <p>We aim to be the most convenient and reliable foodstuff supply chain for businesses across the globe.
@@ -168,7 +191,7 @@
             </div>
             <div class="col-lg-2"></div>
             <div class="col-lg-6">
-                <img src="/assets/about/vision.png" alt="">
+                <img class="img-fluid" src="/assets/about/vision.png" alt="">
             </div>
 
         </div>
@@ -178,13 +201,13 @@
 
     <!-- why choose dairiyar start -->
     <section>
-        <div class="container" style="margin-bottom: 225px;">
-            <div class="row justify-content-between align-items-center">
+        <div class="container why-choose-dairy">
+            <div class="row justify-content-between align-items-center gap-lg-0 gap-5">
                 <div class="col-lg-6">
-                    <img src="/assets/about/whychoose.png" alt="">
+                    <img class="img-fluid" src="/assets/about/whychoose.png" alt="">
                 </div>
-                <div class="col-lg-6 why_choose_rightside" style="width: 47%;">
-                    <h2>Why Choose <br> Dairiyar?</h2>
+                <div class="col-lg-6 why_choose_rightside">
+                    <h2>Why Choose <br class="d-lg-block d-none"> Dairiyar?</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur. Volutpat amet id in eget tincidunt dui
                         ipsum. Egestas at
                         non est neque fames dignissim fringilla scelerisque bibendum. Vulputate aliquam pulvinar aliquet
@@ -193,7 +216,7 @@
                         <div class="feature">
                             <img src="/assets/about/icon1.png" alt="">
                             <h3>Reliability</h3>
-                            <p>Depend on our consistent and <br> timely product supply, backed by our robust network of
+                            <p>Depend on our consistent and <br class="d-lg-block d-none"> timely product supply, backed by our robust network of
                                 vetted suppliers.</p>
 
                         </div>
