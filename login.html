@@ -15,6 +15,9 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/login.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
     <title>Signup Page</title>
 </head>
 
@@ -25,6 +28,9 @@
                 <img class="img-fluid" src="/assets/login/login.png" alt="">
             </div>
             <div class="col-md-1"></div>
+
+            <div class="g-recaptcha" data-sitekey="6LfX0vsqAAAAAJLVcmpf19MlqtA3YSIKE8zRtM-S"></div>
+
             <div class="col-md-6 login_form bg-white">
                 <form action="">
                     <div class="">
@@ -50,11 +56,11 @@
                         <button type="submit" class="login_btn">Log In</button>
                     </form>
                     <div class="text-center login_with ">Or Login with</div>
-                    <div class="social_buttons d-flex" style="gap: 20px;" >
+                    <div class="social_buttons d-flex" style="gap: 20px;">
                         <button class="">
                             <img src="/assets/icon/facebook.png" alt="">Facebook</button>
                         <button class=""><img src="/assets/icon/google.png" alt="">Google</button>
-                    </div>  
+                    </div>
                     <div class="text-center mt-3 question">
                         Didn't have an account? <a href="/signup.html">Sign Up</a>
                     </div>
