@@ -38,6 +38,9 @@
     letter-spacing: 0.64px;
     margin-top: 14px;
     padding-left: 30px;
+}
+
+.form_field {
     margin-bottom: 25px;
 }
 
@@ -57,7 +60,6 @@
     letter-spacing: 0.64px;
     margin-top: 14px;
     padding-left: 30px;
-    margin-bottom: 25px;
 }
 
 .login_btn {
@@ -242,4 +244,3 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
-

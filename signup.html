@@ -26,60 +26,87 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-6 login_form bg-white">
-                <form action="">
+                <div>
                     <div>
                         <img class="logo" src="/assets/logo.png" alt="Logo" width="100">
                     </div>
                     <h4>Seller Registration</h4>
-                    <form>
-                        <div>
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" required placeholder="Full Name">
+                    <form class="needs-validation" novalidate>
+                        <div class="form_field">
+                            <label for="validationCustom01" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="validationCustom01" required
+                                placeholder="Full Name">
+                            <div class="invalid-feedback">
+                                Please provide your Fullname
+                            </div>
                         </div>
 
-                        <div>
+                        <div class="form_field">
                             <label class="form-label">Company Name</label>
                             <input type="text" placeholder="Your Company Name" class="form-control" required>
+
+                            <div class="invalid-feedback">
+                                Please provide your Company Name
+                            </div>
                         </div>
-                        <div>
+                        <div class="form_field">
                             <label class="form-label"> Address</label>
                             <input type="text" class="form-control" required placeholder="Enter Address">
+                            <div class="invalid-feedback">
+                                Please provide your Address
+                            </div>
                         </div>
-                        <div>
+                        <div class="form_field">
                             <label class="form-label"> Mobile No.</label>
                             <input type="text" class="form-control" required placeholder="123 456 789">
+                            <div class="invalid-feedback">
+                                Please provide your Mobile No
+                            </div>
                         </div>
-                        <div>
+                        <div class="form_field">
                             <label class="form-label"> Office Phone No.</label>
-                            <input type="text" class="form-control" required
-                                placeholder="123 456 789">
+                            <input type="text" class="form-control" required placeholder="123 456 789">
+                            <div class="invalid-feedback">
+                                Please provide your Office Phone No.
+                            </div>
                         </div>
 
-                        <div>
+                        <div class="form_field">
                             <label class="form-label">Email ID</label>
                             <input type="email" class="form-control" required placeholder="email@example.com">
+                            <div class="invalid-feedback">
+                                Please provide your Email ID
+                            </div>
                         </div>
 
 
-                        <div>
+                        <div class="form_field">
                             <label class="form-label">GST No.</label>
                             <input type="text" class="form-control" required placeholder="123 456">
+                            <div class="invalid-feedback">
+                                Please provide your GST No
+                            </div>
                         </div>
-                        <div>
-                            <label class="form-label">Product Type</label>
-                            <select class="form-select" required aria-label="Default select example">
-                                <option selected>Product Type</option>
+                        <div class="form_field">
+                            <label for="state" class="form-label">Product Type</label>
+                            <select class="form-select" id="state" required>
+                                <option selected disabled value="">Choose...</option>
                                 <option value="1">Generic</option>
                                 <option value="2">Organic</option>
                                 <option value="3">Generic</option>
                             </select>
-                        </div>
-                        <div>
-                            <label class="form-label">Product Category</label>
-                            <input type="text" class="form-control" required placeholder="Add Category">
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
                         </div>
 
-                        
+                        <div class="form_field">
+                            <label class="form-label">Product Category</label>
+                            <input type="text" class="form-control" required placeholder="Add Category">
+                            <div class="invalid-feedback">
+                                Please add Product Category
+                            </div>
+                        </div>
                         <button type="submit" class="login_btn mt-0">Submit</button>
                     </form>
                     <div class="text-center login_with ">Or Login with</div>
@@ -91,11 +118,26 @@
                     <div class="text-center mt-3 question">
                         Already have an account? <a href="/login.html"> Log In</a>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
