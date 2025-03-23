@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+    <title>Dariyapar</title>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  lg:px-0 px-3"
+            style="box-shadow: 0px 1px 2px 0px rgba(160, 160, 160, 0.30);">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.png" alt="Logo">
+                </a>
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Icons and Buttons -->
+                    <form class="d-flex flex-lg-row flex-column mt-lg-0 mt-5 align-items-center" style="gap: 20px;">
+                        <div class="d-flex align-items-center gap-3">
+                            <img style="margin-top: 0;" src="/assets/icon/love.svg" alt="">
+                            <img style="margin-bottom:13px;" src="/assets/icon/Vector.png" alt="">
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="login_button" type="submit">Log in</button>
+                            <button class="signup_button" type="submit">Sign Up</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- Profile Navigation -->
+    <div class="profile-nav">
+        <nav class="container nav_links">
+            <a href="#">Profile</a>
+            <a href="#">Orders</a>
+            <a href="#">Messages</a>
+            <a href="#">Support</a>
+        </nav>
+    </div>
+
+    <!-- Progress Steps -->
+    <div class="progress-steps">
+        <div class="step active">
+            <a href="/transport-option.html">
+                <div class="step-circle">
+                    <img src="/assets/icon/step1.png" alt="">
+                </div>
+            </a>
+            <div class="step-label">Select Transport option</div>
+        </div>
+        <div class="step active">
+            <a href="/step2.html">
+                <div class="step-circle"><img src="/assets/icon/step2white.png" alt=""></div>
+            </a>
+            <div class="step-label">Select Container Size</div>
+        </div>
+        <div class="step active">
+            <div class="step-circle"><img src="/assets/icon/step3white.png" alt=""></div>
+            <div class="step-label">Select Destination Port</div>
+        </div>
+        <div class="step active">
+            <div class="step-circle"><img src="/assets/icon/Add_To_Queue.png" alt=""></div>
+            <div class="step-label">Add Products</div>
+        </div>
+    </div>
+
+
+    <!-- Main Content Section -->
+
+    <div class="add_products_container">
+        <h3>Add Products</h3>
+        <div class="container_size">
+            <section class="container-section">
+                <div class="container-content">
+                    <div class="container-header">
+                        <h5 class="section-title">Container Size</h5>
+                        <h2 class="main-title">20' Container</h2>
+                        <a href="#" class="add-space-link">Add More Space</a>
+                    </div>
+                    <div class="progress-bar-container">
+                        <span class="progress-text text-start">40% of 20,000 kg</span>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <button class="add-product-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path d="M7.5 1.5V14.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 8H14" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>Add Product</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- table -->
+        <div class="add_products_table container">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Title / Description</th>
+                        <th scope="col">Price Fob</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="d-flex  gap-4 align-items-center">
+                                <img src="/assets/product1.png" alt="">
+                                <span>Cumin Seeds 25 kg pp bags</span>
+                            </div>
+                        </td>
+                        <td class="align-middle">$2.5 per k.g</td>
+                        <td class="align-middle">5000 kg</td>
+                        <td class="align-middle">
+                            <div class="align-middle d-flex align-items-center" style="gap: 40px;">
+                                <p>$12500</p>
+
+                                <p style="cursor: pointer;"> <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M1 13L7.00002 7.00002M7.00002 7.00002L13 1M7.00002 7.00002L1 1M7.00002 7.00002L13 13"
+                                            stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex  gap-4 align-items-center">
+                                <img src="/assets/product1.png" alt="">
+                                <span>Cumin Seeds 25 kg pp bags</span>
+                            </div>
+                        </td>
+                        <td class="align-middle">$2.5 per k.g</td>
+                        <td class="align-middle">5000 kg</td>
+                        <td class="align-middle">
+                            <div class="align-middle d-flex align-items-center" style="gap: 40px;">
+                                <p>$12500</p>
+
+                                <p style="cursor: pointer;"> <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M1 13L7.00002 7.00002M7.00002 7.00002L13 1M7.00002 7.00002L1 1M7.00002 7.00002L13 13"
+                                            stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></p>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="d-flex  gap-4 align-items-center">
+                                <img src="/assets/product1.png" alt="">
+                                <span>Cumin Seeds 25 kg pp bags</span>
+                            </div>
+                        </td>
+                        <td class="align-middle">$2.5 per k.g</td>
+                        <td class="align-middle">5000 kg</td>
+                        <td class="align-middle">
+                            <div class="align-middle d-flex align-items-center" style="gap: 40px;">
+                                <p>$12500</p>
+
+                                <p style="cursor: pointer;"> <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M1 13L7.00002 7.00002M7.00002 7.00002L13 1M7.00002 7.00002L1 1M7.00002 7.00002L13 13"
+                                            stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

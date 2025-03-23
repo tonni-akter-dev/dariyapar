@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dariyapar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .main-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Profile Navigation */
+        .profile-nav {
+            display: flex;
+            justify-content: flex-start;
+            gap: 25px;
+            padding: 15px 50px;
+            background: #f8f8f8;
+        }
+
+        .profile-nav a {
+            text-decoration: none;
+            color: #444;
+            font-size: 14px;
+        }
+
+        /* Progress Steps */
+        .progress-steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 30px 0;
+            position: relative;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .step {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -62%;
+            right: 50%;
+            height: 2px;
+            background: linear-gradient(to right, #007bff 50%, transparent 50%);
+            background-size: 6px 2px;
+            background-repeat: repeat-x;
+            /* background: #ddd; */
+            z-index: -1;
+        }
+
+        .step:first-child::before {
+            display: none;
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            border: 2px solid #ddd;
+        }
+
+        .step.active .step-circle {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .step.active .step-label {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .step-label {
+            color: #666;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        /* Container Selection */
+
+        .container-selection {
+            max-width: 360px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .selection-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+
+        .option-card {
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            padding: 16px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            position: relative;
+            height: 56px;
+            display: flex;
+            align-items: center;
+        }
+
+        .option-card:hover {
+            border-color: #1976D2;
+        }
+
+        .option-card.selected {
+            border-color: #1976D2;
+            background-color: #F5F9FF;
+        }
+
+        .option-icon {
+            font-size: 24px;
+            color: #666;
+            margin-right: 16px;
+        }
+
+        .option-text {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .next-button {
+            background-color: #1976D2;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            float: left;
+            margin-top: 16px;
+            cursor: pointer;
+        }
+
+        .checkmark {
+            position: absolute;
+            right: 16px;
+            color: #1976D2;
+            display: none;
+        }
+
+        .selected .checkmark {
+            display: block;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .top-nav,
+            .profile-nav {
+                padding: 15px 20px;
+            }
+
+            .main-menu,
+            .profile-nav {
+                gap: 15px;
+            }
+
+            .progress-steps {
+                gap: 20px;
+                padding: 20px 10px;
+                flex-wrap: wrap;
+            }
+
+            .transport-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="logo">Dariyapar</div>
+        <div class="main-menu">
+            <a href="#">Home</a>
+            <a href="#">Shops</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Profile Navigation -->
+    <nav class="profile-nav">
+        <a href="#">Profile</a>
+        <a href="#">Orders</a>
+        <a href="#">Messages</a>
+        <a href="#">Support</a>
+    </nav>
+    <!-- Progress Steps -->
+    <div class="progress-steps">
+        <div class="step active">
+            <div class="step-circle">1</div>
+            <div class="step-label">Select Transport option</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">2</div>
+            <div class="step-label">Select Container Size</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">3</div>
+            <div class="step-label">Select Destination Port</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">4</div>
+            <div class="step-label">Add Products</div>
+        </div>
+    </div>
+
+
+
+    <!-- Container Selection -->
+
+    <div class="container-selection">
+        <div class="selection-title">Select Container size</div>
+
+        <div class="option-card">
+            <i class="fas fa-box option-icon"></i>
+            <span class="option-text">20 ft dry container</span>
+            <i class="fas fa-check checkmark"></i>
+        </div>
+
+        <div class="option-card">
+            <i class="fas fa-box option-icon"></i>
+            <span class="option-text">40 ft high cube container</span>
+            <i class="fas fa-check checkmark"></i>
+        </div>
+
+        <div class="option-card">
+            <i class="fas fa-snowflake option-icon"></i>
+            <span class="option-text">20° Refrigerated container</span>
+            <i class="fas fa-check checkmark"></i>
+        </div>
+
+        <div class="option-card">
+            <i class="fas fa-snowflake option-icon"></i>
+            <span class="option-text">40° Refrigerated container</span>
+            <i class="fas fa-check checkmark"></i>
+        </div>
+
+        <button class="next-button">Next <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <script>
+        // Add selection functionality
+        document.querySelectorAll('.option-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+
+</html>
