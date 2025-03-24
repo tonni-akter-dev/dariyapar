@@ -49,9 +49,9 @@
     content: '';
     position: absolute;
     top: 31px;
-    left: -56%;
-    right: 50%;
-    height: 2px;
+    left: -36%;
+    right: 65%; 
+    height: 1px;
     background: linear-gradient(to right, #414141 50%, transparent 50%);
     background-size: 6px 2px;
     background-repeat: repeat-x;

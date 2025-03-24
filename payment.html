@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/payment.css">
     <title>Dariyapar</title>
 
 </head>
 
-<body style="background-color: #FAFAFA;">
+<body>
     <!-- header start -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light  lg:px-0 px-3"
@@ -81,73 +82,63 @@
         </nav>
     </div>
 
-    <!-- Progress Steps -->
-    <div class="progress-steps">
-        <div class="step active">
-            <a href="/transport-option.html">
-                <div class="step-circle">
-                    <img src="/assets/icon/step1.png" alt="">
+
+
+    <!-- payment -->
+    <section class="payment_section">
+        <h2>Select Payment Term</h2>
+        <div>
+            <div class="payment_card">
+                100% Advance
+            </div>
+            <div style="background-color: #2055A1; color: #FFF;" class="payment_card">
+                Lc at Sight
+            </div>
+            <div class="payment_card">
+                30% Advance Remain T/T After Shipment
+            </div>
+            <div class="payment_card">
+                100% CAD
+            </div>
+            <div class="payment_card">
+                Custom Payment Term Request
+            </div>
+            <div class="payment_card">
+                Card Payment
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <div class="next-btn-container">
+        <a href="/payment.html"> <button class="next-btn" style="width: 250px;">Procced to payment</button></a>
+    </div> -->
+
+    <div class="next-btn-container">
+        <button class="next-btn btn btn-primary" style="width: 250px;" data-toggle="modal"
+            data-target="#paymentConfirmationModal">Proceed to payment</button>
+    </div>
+    <!-- thank you modal -->
+
+    <div class="modal fade" id="paymentConfirmationModal" tabindex="-1" role="dialog"
+        aria-labelledby="paymentConfirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-            </a>
-            <div class="step-label">Select Transport option</div>
-        </div>
-        <div class="step">
-            <a href="/step2.html">
-                <div class="step-circle"><img src="/assets/icon/step2.png" alt=""></div>
-            </a>
-            <div class="step-label">Select Container Size</div>
-        </div>
-        <div class="step">
-            <a href="/destination-port.html">
-                <div class="step-circle"><img src="/assets/icon/step3.png" alt=""></div>
-            </a>
-            <div class="step-label">Select Destination Port</div>
-        </div>
-        <div class="step">
-             <a href="/addProducts.html">
-            <div class="step-circle"><img src="/assets/icon/step4.png" alt=""></div>
-            </a>
-            <div class="step-label">Add Products</div>
+                <div class="thankyou_content">
+                    <img src="/assets/thankyou.png" alt="">
+                    <h2>Thanks for your order!</h2>
+                    <p>Your Order No. CEE02223</p>
+                    <span>You will receive Contract And Proforma <br> Invoice on email and dashboard.</span>
+                    <a href="/index.html">Go Home</a>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    <!-- Main Content Section -->
-    <section class="transport-section">
-        <h2 class="transport-heading">Select Transport option</h2>
-
-        <div class="transport-options">
-            <!-- Sea Option -->
-            <button class="transport-btn selected" onclick="toggleSelection(this)">
-                <div class="checkmark">
-                    <img src="/assets/icon/check.png" alt="">
-                </div>
-                <div class="icon-container mb-2">
-                    <img src="/assets/icon/shi[p.png" alt="">
-                </div>
-                <span class="mt-3"> By Sea</span>
-            </button>
-
-            <!-- Air Option -->
-            <button class="transport-btn" onclick="toggleSelection(this)">
-                <div class="checkmark"> <img src="/assets/icon/check.png" alt=""></div>
-                <div class="icon-container">
-                    <img src="/assets/icon/air.png" alt="">
-                </div>
-                <span class="mt-3"> By Air</span>
-            </button>
-        </div>
-
-        <!-- Centered Next Button -->
-        <div class="next-btn-container">
-            <a href="/step2.html"> <button class="next-btn">Next <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                        height="16" viewBox="0 0 22 16" fill="none">
-                        <path
-                            d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9H21V7H1V9Z"
-                            fill="white" />
-                    </svg></button></a>
-        </div>
-    </section>
 
     <script>
         function toggleSelection(button) {
@@ -164,6 +155,12 @@
         });
 
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
