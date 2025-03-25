@@ -1,0 +1,330 @@
+.sidebar {
+    background-color: #FFFFFF;
+    padding: 0;
+
+
+
+}
+
+.sidebar a {
+    display: block;
+    /* padding: 10px 20px; */
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar a:last-child {
+    border-bottom: none;
+}
+
+.chat-area {
+    border-radius: 5px;
+    padding: 0;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F1F1;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px;
+    border: 1px solid #F0F0F0;
+    background: #FFF;
+}
+
+.chat-header div {
+    display: flex;
+    align-items: center;
+}
+
+.chat_date {
+    color: var(--Paragraph, #414141);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 4px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--Light, #FFF);
+    width: fit-content;
+    margin-top: 16px;
+}
+
+.message-content h4 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.chatting {
+    display: flex;
+    padding: 12px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 0px 12px 12px 12px;
+    background: var(--Light, #FFF);
+    margin-bottom: 12px;
+}
+
+.chat-header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-header span {
+    font-weight: bold;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.message.sender {
+    justify-content: flex-end;
+}
+
+.message.receiver {
+    justify-content: flex-start;
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 8px;
+    /* max-width: 70%; */
+    word-break: break-word;
+    position: relative;
+}
+
+.message.receiver .message-content {
+    /* background-color: #e8f5e9; */
+    color: #333;
+}
+
+.message.sender .message-content {
+    color: #333;
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.send_msg {
+    color: var(--Light, #FFF);
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    padding: 12px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-left: auto;
+    width: fit-content;
+    border-radius: 12px 0px 12px 12px;
+    background: var(--Primary-color-1, #2055A1);
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    background: #FAFAFA;
+}
+
+.message-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    padding-left: 51px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    border-radius: 100px;
+    background: #FAFAFA;
+}
+
+.message-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mic {
+    position: absolute;
+    left: 40px;
+}
+
+.icon {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+.sidebar-header {
+    display: flex;
+    padding: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-header a {
+    /* padding: 8px 15px; */
+    border-radius: 5px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #eee;
+}
+
+/* .sidebar-header a.active {
+    color: #333;
+    font-weight: bold;
+} */
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.sidebar-item small {
+    color: var(--Paragraph, #414141);
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.text_count {
+    background-color: #71CFF3;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    color: var(--Primary-color-1, #2055A1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.message_list {
+    display: flex;
+    gap: 6px;
+    margin-top: 22px;
+    padding-left: 24px;
+}
+
+.message_list .active {
+    border-radius: 100px;
+    background: var(--Secondary, #009BDB);
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.message_list a {
+    margin-bottom: 22px;
+    color: var(--Paragraph, #414141);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    height: 28px;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    padding: 4px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--f-0-f-0-f-0, #F0F0F0);
+    width: fit-content;
+}
+
+.sidebar-item .name {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sidebar-item .status {
+    color: #639F89;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
