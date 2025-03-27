@@ -1,0 +1,134 @@
+.profile_text {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.profile_nav .nav {
+    border-radius: 12px;
+    border: 1px solid #E4E5E7;
+    background: #FFF;
+    width: 310px;
+    height: 281px;
+    flex-shrink: 0;
+    align-items: start;
+    padding-top: 30px;
+    padding-left: 43px;
+}
+
+.profile_nav .nav-link {
+    padding: 0;
+    margin-bottom: 40px;
+    color: var(--Paragraph, #5B606C);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 22px */
+}
+
+.nav-pills .nav-link.active {
+    color: var(--Primary-color-1, #2055A1);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    background-color: transparent;
+    position: relative;
+}
+
+.nav-pills .nav-link.active::before {
+    content: "";
+    background-color: #2055A1;
+    width: 2px;
+    height: 42px;
+    position: absolute;
+    left: -46px;
+    top: -11px;
+}
+
+
+/* profile card */
+.profile-card {
+    border-radius: 8px;
+    padding: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    font-family: sans-serif;
+    max-width: 980px;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom:150px ;
+}
+
+.tab-content {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #E4E5E7;
+    background: #FFF;
+}
+
+.profile-image {
+    margin-right: 130px;
+    text-align: center;
+}
+
+.detail-row .label {
+    color: #8B8D91;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 30px;
+    width: 75px;
+}
+
+.detail-row .value {
+    color: #141C3C;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 30px;
+    /* 18px */
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.detail-row {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 42px;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-weight: bold;
+}
