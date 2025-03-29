@@ -100,61 +100,122 @@
             <div class="tab-content w-100" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                     aria-labelledby="v-pills-home-tab">
-                <!-- overview -->
-
-
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="/assets/profile1.png" alt="Robert Howard">
-                        <div class="profile-name">Robert Howard</div>
+                    <!-- overview -->
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="/assets/profile1.png" alt="Robert Howard">
+                            <div class="profile-name">Robert Howard</div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-row">
+                                <span class="label">Full Name:</span>
+                                <span class="value">Robert Howard</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Company:</span>
+                                <span class="value">Xmail</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Email:</span>
+                                <span class="value">robert@gmail.com</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Phone:</span>
+                                <span class="value">654 984 685</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Address:</span>
+                                <span class="value">123 Maple Street, Toronto</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Country:</span>
+                                <span class="value">Canada</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label mb-0">State:</span>
+                                <span class="value mb-0">Up</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="profile-details">
-                        <div class="detail-row">
-                            <span class="label">Full Name:</span>
-                            <span class="value">Robert Howard</span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Company:</span>
-                            <span class="value">Xmail</span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Email:</span>
-                            <span class="value">robert@gmail.com</span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Phone:</span>
-                            <span class="value">654 984 685</span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Address:</span>
-                            <span class="value">123 Maple Street, Toronto</span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Country:</span>
-                            <span class="value">Canada</span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label mb-0">State:</span>
-                            <span class="value mb-0">Up</span>
-                        </div>
-                    </div>
+                    <!-- overview -->
                 </div>
-                <!-- overview -->
-                
-                </div>
-
-
-
                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    asfsdf<div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                            aria-labelledby="v-pills-messages-tab">
-                            sdfdsfsdf...</div>
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab">
-                            sdfdsfsd ...</div>
+                    <div class="profile-container">
+                        <div class="profile-picture">
+                            <div class=" position-relative">
+                                <img src="/assets/profile1.png" alt="Profile Picture">
+                                <div class="camera_icon">
+                                    <img src="/assets/camera.png" alt="">
+                                </div>
+                            </div>
+                            <p class="text-muted">File type: JPEG, JPG, PNG, GIF, SVG</p>
+                        </div>
+
+                        <div class="edit-details">
+                            <h5 class="mb-4">Edit Details</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" value="Robert Howard">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="company">Company</label>
+                                    <input type="text" class="form-control" id="company" value="Xmail">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" value="robert@gmail.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone">Phone</label>
+                                    <div class="country-phone">
+                                        <img src="https://flagcdn.com/20x15/in.png" alt="India Flag">
+                                        <input type="tel" class="form-control" id="phone" value="+91">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="address1">Address Line 1</label>
+                                    <input type="text" class="form-control" id="address1" value="Address Line 1 Here">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="address2">Address Line 2</label>
+                                    <input type="text" class="form-control" id="address2" value="Address Line 2 Here">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="country">Country</label>
+                                    <input type="text" class="form-control" id="country" value="Canada">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="state">State</label>
+                                    <input type="text" class="form-control" id="state" value="Up">
+                                </div>
+                            </div>
+                            <div class="save-button">
+                                <button type="button" class="btn btn-primary">Save Changes</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel"
+                    aria-labelledby="v-pills-messages-tab">
+                    DSDF
+                    <!-- overview -->
+                </div>
+                <!-- <div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        sdfdsfsdf...</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        sdfdsfsd ...</div>
+                </div> -->
+
             </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

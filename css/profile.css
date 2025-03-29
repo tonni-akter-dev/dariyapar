@@ -67,7 +67,7 @@
     max-width: 980px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom:150px ;
+    margin-bottom: 150px;
 }
 
 .tab-content {
@@ -132,3 +132,16 @@
 .label {
     font-weight: bold;
 }
+
+/* edit profile */
+.camera_icon {
+    position: absolute;
+    right: 10px;
+    background-color: #500190;
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+}
+
+
+/* edit profile */
