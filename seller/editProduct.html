@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="/css/Message.css">
+    <link rel="stylesheet" href="/css/orders.css">
+    <title>Dariyapar</title>
+
+</head>
+
+<body style="background-color: #fafafa;">
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  lg:px-0 px-3"
+            style="box-shadow: 0px 1px 2px 0px rgba(160, 160, 160, 0.30);">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.png" alt="Logo">
+                </a>
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Icons and Buttons -->
+                    <form class="d-flex flex-lg-row flex-column mt-lg-0 mt-5 align-items-center" style="gap: 20px;">
+                        <div class="d-flex align-items-center gap-3">
+                            <img style="margin-top: 0;" src="/assets/icon/love.svg" alt="">
+                            <img style="margin-bottom:13px;" src="/assets/icon/Vector.png" alt="">
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="login_button" type="submit">Log in</button>
+                            <button class="signup_button" type="submit">Sign Up</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- Profile Navigation -->
+    <div class="profile-nav">
+        <nav class="container nav_links">
+            <a href="/seller/sellerDashboard.html">Dashboard</a>
+            <a href="/seller/ManageProduct.html">Products</a>
+            <a href="/Messages.html">Price Update</a>
+            <a href="#">Others</a>
+            <a href="#">Messages</a>
+            <a href="#">Support</a>
+        </nav>
+    </div>
+
+
+    <!-- edit product -->
+
+    <div class="container edit_product_wrapper">
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <h2 class="edit_product">Edit Product</h2>
+                <div class="basic_info">
+                    <h3>Basic Info</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="productName">Product Name <span style="color: #EF2F2F;">
+                                    *
+                                </span>
+                                <img src="/assets/info.png" alt="">
+                            </label>
+                            <input type="text" class="form-control" id="productName" value="Cumin Seeds">
+                        </div>
+                        <div class="form-group">
+                            <label for="productImage">Product Image *</label>
+                            <div class="image-upload-container">
+
+                                <div class="image_wrapper">
+                                    <img src="/assets/profile1.png" alt="">
+                                    <img src="/assets/plus.png" alt="">
+                                </div>
+
+                                <p>Max 10 images. Max file size: 5mb. Image format: JPG, PNG</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="basic_info">
+                    <h3>Product Specification</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Product Name <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <input type="text" class="form-control" id="productName" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Product Sub Category <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <!-- <input type="text" class="form-control" id="productName" value="Cumin Seeds"> -->
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Product Type * <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Product Name <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <input type="text" class="form-control" id="productName" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">HSN Code <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <input type="text" class="form-control" id="productName" value="Cumin Seeds">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <!-- packaging -->
+                <div class="basic_info">
+                    <h3>Packaging</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Packing <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+
+                                    <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                        <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                            aria-label="Text input with dropdown button">
+                                        <div class="p-2">
+                                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">KG</button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">5</a></li>
+                                                <li><a class="dropdown-item" href="#">20</a></li>
+                                                <li><a class="dropdown-item" href="#">220</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Packing Materia <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="row">
+                                    <label for="productName">jute bag size <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <div class="col-md-6 ps-0">
+                                        <div class="form-group">
+
+                                            <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                                <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                                    aria-label="Text input with dropdown button" value="30">
+                                                <div class="p-2">
+                                                    <button class="input_text " type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">L</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ps-0">
+                                        <div class="form-group">
+
+                                            <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                                <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                                    aria-label="Text input with dropdown button" value="30">
+                                                <div class="p-2">
+                                                    <button class="input_text " type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">w</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <label for="productName">jute bag size <span style="color: #EF2F2F;">
+                                        *
+                                    </span>
+                                    <img src="/assets/info.png" alt="">
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-6 ps-0">
+                                        <div class="form-group">
+                                            <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                                <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                                    aria-label="Text input with dropdown button" value="50">
+                                                <div class="p-2">
+                                                    <button class="input_text " type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">H</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ps-0">
+                                        <div class="form-group">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>CM</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                        <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                            aria-label="Text input with dropdown button" value="20">
+                                        <div class="p-2">
+                                            <button class="input_text " type="button"
+                                                style="width: 100px; text-align: center;  justify-content: center;"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Unit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <!-- packaging -->
+                <div class="basic_info">
+                    <h3>Price & Stock</h3>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Regular Price <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                        <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                            aria-label="Text input with dropdown button" value="1150">
+                                        <div class="p-2">
+                                            <button style="width: 100px; text-align: center;  justify-content: center;"
+                                                class="input_text " type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">INR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ps-0">
+                                <div class="form-group">
+                                    <label for="productName">Special Price <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+
+                                        <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                            aria-label="Text input with dropdown button" value="20">
+                                        <div class="p-2">
+                                            <button class="input_text " type="button"
+                                                style="width: 100px; text-align: center;  justify-content: center;"
+                                                data-bs-toggle="dropdown" aria-expanded="false">USD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 ps-0 mt-4">
+                                <div class="form-group">
+                                    <label for="productName">Stock Available <span style="color: #EF2F2F;">
+                                            *
+                                        </span>
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+    
+                                    <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                        <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                            aria-label="Text input with dropdown button">
+                                        <div class="p-2">
+                                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Pack</button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">5</a></li>
+                                                <li><a class="dropdown-item" href="#">20</a></li>
+                                                <li><a class="dropdown-item" href="#">220</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 ps-0 mt-4">
+                                <div class="form-group">
+                                    <label for="productName">Delivery Location Price 
+                                        <img src="/assets/info.png" alt="">
+                                    </label>
+                                    <div class="input-group custom_dropdown_input" style="margin-top: 12px;">
+                                        <input type="text" class="form-control mt-0" style="border-right: 0;"
+                                            aria-label="Text input with dropdown button" value="1150">
+                                        <div class="p-2">
+                                            <button style="width: 186px; text-align: center;  justify-content: space-between;"
+                                                class="input_text " type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">ex factory only
+                                            <span>
+                                                <img src="/assets/location.svg" alt="">
+                                            </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                </div>
+
+                </form>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- orders -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -145,3 +145,126 @@
 
 
 /* edit profile */
+
+
+.profile-container {
+    padding: 35px;
+}
+
+.text-muted {
+    color: #9F9F9F;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-top: 17px;
+    margin-bottom: 65px;
+}
+
+.edit-details h5 {
+    color: var(--Heading, #141C3C);
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.12px;
+}
+
+.edit-details label {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.08px;
+}
+
+.edit-details input {
+    border-radius: 12px;
+    border: 0.5px solid #8B8D91;
+    height: 50px;
+    color: #8B8D91;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 22px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.08px;
+}
+
+.edit-details .save_changes {
+    border-radius: 12px;
+    background: var(--Primary-color-1, #2055A1);
+    width: 238px;
+    height: 52px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile-picture .text {
+    color: var(--Heading, #141C3C);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 25px;
+    /* 24px */
+}
+
+
+/*  */
+.profile-picture {
+    width: 204px;
+    position: relative;
+    /* margin:0 20px auto; */
+}
+
+.profile-picture img {
+    /* width: 150px;
+    height: 150px; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 6px;
+    background-color: purple;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: cen ter; */
+}
+
+.file-types {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.password_input {
+    position: relative;
+}
+.password_input img{
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    cursor: pointer;
+}
